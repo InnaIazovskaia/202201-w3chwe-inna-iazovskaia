@@ -4,6 +4,8 @@ class PageComponent extends Component {
   constructor(parentElement, pageTitle) {
     super(parentElement, "page");
     this.pageTitle = pageTitle;
+
+    this.generateHTML();
   }
 
   generateHTML() {
@@ -15,9 +17,10 @@ class PageComponent extends Component {
         <a class="nav__item" href="#">My pokémons</a>
         <a class="nav__item" href="#">Pokémon details</a>
       </nav>
-      <h1 class="header__title">${this.pageTitle}</h1>
     </header>
-    <main class="main"></main>
+    <main class="main">
+    <h1 class="main__title">${this.pageTitle}</h1>
+    </main>
     `;
   }
 }
