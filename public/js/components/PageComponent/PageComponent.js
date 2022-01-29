@@ -12,7 +12,7 @@ class PageComponent extends Component {
     this.element.innerHTML = `
     <header class="header">
       <nav class="nav">
-        <img class="logo" src="../images/pokemon-logo.svg" alt="Pokémon logo" />
+        <img class="logo" src="./images/pokemon-logo.svg" alt="Pokémon logo" />
         <a class="nav__item" href="#">All pokémons</a>
         <a class="nav__item" href="#">My pokémons</a>
         <a class="nav__item" href="#">Pokémon details</a>
