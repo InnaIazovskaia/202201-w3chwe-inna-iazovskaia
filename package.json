@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/InnaIazovskaia/202203-inna-iazovskaia#readme",
   "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.16.8",
     "@types/jest": "^27.4.0",
     "eslint": "^8.7.0",
     "eslint-config-airbnb-base": "^15.0.0",
@@ -26,5 +27,17 @@
     "eslint-plugin-import": "^2.25.4",
     "husky": "^7.0.0",
     "jest": "^27.4.7"
+  },
+  "jest": {
+    "testEnvironment": "jsdom"
+  },
+  "babel": {
+    "env": {
+      "test": {
+        "plugins": [
+          "@babel/plugin-transform-modules-commonjs"
+        ]
+      }
+    }
   }
 }
