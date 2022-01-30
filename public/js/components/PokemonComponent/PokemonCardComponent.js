@@ -1,3 +1,4 @@
+import ButtonComponent from "../ButtonComponent/ButtonComponent.js";
 import Component from "../Component.js";
 
 class PokemonCardComponent extends Component {
@@ -17,6 +18,8 @@ class PokemonCardComponent extends Component {
     this.pokemonAbilities = pokemonAbilities;
 
     this.generateHTML();
+
+    this.renderButtonComponent();
   }
 
   generateHTML() {
@@ -26,6 +29,14 @@ class PokemonCardComponent extends Component {
     <p class="pokemonCard__information">type: ${this.pokemonType}</p>
     <p class="pokemonCard__information">abilities: ${this.pokemonAbilities}</p>
     `;
+  }
+
+  renderButtonComponent() {
+    new ButtonComponent(
+      this.element,
+      "pokemonCard__button",
+      "Add to favorites"
+    );
   }
 }
 
