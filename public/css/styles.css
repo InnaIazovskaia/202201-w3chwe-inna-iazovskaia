@@ -75,3 +75,9 @@
   border-radius: 20px;
   background: #9acd32;
 }
+
+.pokemonCard__button:hover {
+  cursor: pointer;
+  background: #261644;
+  color: #9acd32;
+}
