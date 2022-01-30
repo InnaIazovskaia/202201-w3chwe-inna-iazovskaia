@@ -35,7 +35,8 @@ class PokemonCardComponent extends Component {
     new ButtonComponent(
       this.element,
       "pokemonCard__button",
-      "Add to favorites"
+      "Add to favorites",
+      this.pokemonId
     );
   }
 }
