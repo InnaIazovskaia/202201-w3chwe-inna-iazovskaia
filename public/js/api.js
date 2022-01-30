@@ -30,6 +30,8 @@ function getPokemonInformation(pokemonResponse) {
     id: pokemonResponse.id,
     name: pokemonResponse.name,
     img: pokemonResponse.sprites.other.home.front_default,
+    type: pokemonResponse.types[0].type.name,
+    abilities: pokemonResponse.abilities[0].ability.name,
   };
 
   return pokemons;
