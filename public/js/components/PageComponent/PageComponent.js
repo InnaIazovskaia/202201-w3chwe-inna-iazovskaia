@@ -29,7 +29,14 @@ class PageComponent extends Component {
 
     const div = document.querySelector(".pockemonCardsContainer");
     this.pokemonsData.forEach((pokemon) => {
-      new PokemonCardComponent(div, pokemon.name, pokemon.img, "", "");
+      new PokemonCardComponent(
+        div,
+        pokemon.name,
+        pokemon.id,
+        pokemon.img,
+        "",
+        ""
+      );
     });
   }
 }
