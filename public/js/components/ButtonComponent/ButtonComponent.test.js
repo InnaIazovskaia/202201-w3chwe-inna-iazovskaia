@@ -5,7 +5,7 @@ describe("Given a ButtonComponent component", () => {
     test("Then it should render a button", () => {
       const container = document.createElement("div");
 
-      const button = new ButtonComponent(container);
+      new ButtonComponent(container);
 
       expect(container.querySelector("button")).not.toBeNull();
     });
