@@ -17,17 +17,19 @@ class PageComponent extends Component {
           <nav class="nav">
             <a class="nav__item" href="#">All pokémons</a>
             <a class="nav__item" href="#">My pokémons</a>
-            <a class="nav__item" href="#">Pokémon details</a>
           </nav>
       </header>
       <main class="main">
+        <div class="main__title_container">
         <h1 class="main__title">${this.pageTitle}</h1>
+        </div>
+        <div class="pockemonCardsContainer"></div>
       </main>
     `;
 
-    const main = document.querySelector(".main");
+    const div = document.querySelector(".pockemonCardsContainer");
     this.pokemonsData.forEach((pokemon) => {
-      new PokemonCardComponent(main, pokemon.name, pokemon.img, "", "");
+      new PokemonCardComponent(div, pokemon.name, pokemon.img, "", "");
     });
   }
 }
