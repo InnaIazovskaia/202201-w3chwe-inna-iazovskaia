@@ -4,12 +4,14 @@ class PokemonCardComponent extends Component {
   constructor(
     parentElement,
     pokemonName,
+    pokemonId,
     srcImgPokemon,
     pokemonType,
     pokemonAbilities
   ) {
     super(parentElement, "pokemonCard", "div");
     this.pokemonName = pokemonName;
+    this.pokemonId = pokemonId;
     this.srcImgPokemon = srcImgPokemon;
     this.pokemonType = pokemonType;
     this.pokemonAbilities = pokemonAbilities;
@@ -19,7 +21,7 @@ class PokemonCardComponent extends Component {
 
   generateHTML() {
     this.element.innerHTML = `
-    <h2 class="pokemonCard__header">${this.pokemonName}</h2>
+    <h2 class="pokemonCard__header">${this.pokemonName} id: #${this.pokemonId}</h2>
     <img class="pokemonCard__img" src="${this.srcImgPokemon}" alt="image of pokémon ${this.pokemonName}" />
     <p class="pokemonCard__information">type: ${this.pokemonType}</p>
     <p class="pokemonCard__information">abilities: ${this.pokemonAbilities}</p>
