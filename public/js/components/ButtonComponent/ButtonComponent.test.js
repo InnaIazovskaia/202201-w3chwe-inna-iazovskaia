@@ -27,7 +27,7 @@ describe("Given a ButtonComponent component", () => {
       const container = document.createElement("div");
       const action = jest.fn();
 
-      const button = new ButtonComponent(container, "", "", action);
+      const button = new ButtonComponent(container, "", "", "", action);
       button.element.click();
 
       expect(action).toHaveBeenCalled();
