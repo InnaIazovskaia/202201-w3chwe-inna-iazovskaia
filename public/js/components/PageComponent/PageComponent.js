@@ -34,8 +34,8 @@ class PageComponent extends Component {
         pokemon.name,
         pokemon.id,
         pokemon.img,
-        "",
-        ""
+        pokemon.type,
+        pokemon.abilities
       );
     });
   }
