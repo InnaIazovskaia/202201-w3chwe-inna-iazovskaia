@@ -51,7 +51,7 @@
   flex-direction: column;
   align-items: center;
   width: 200px;
-  height: 250px;
+  height: 270px;
   border-radius: 30px;
   background: #f16405;
   margin-bottom: 20px;
@@ -67,4 +67,17 @@
 .pokemonCard__header {
   padding-top: 5px;
   font-size: 20px;
+}
+
+.pokemonCard__button {
+  border: none;
+  margin-top: 10px;
+  border-radius: 20px;
+  background: #9acd32;
+}
+
+.pokemonCard__button:hover {
+  cursor: pointer;
+  background: #261644;
+  color: #9acd32;
 }
