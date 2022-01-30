@@ -1,14 +1,20 @@
 * {
   margin: 0;
   box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .main__title {
   text-align: center;
+  padding-top: 30px;
+  color: #261644;
 }
 
 .nav__item {
   text-decoration: none;
+  color: #261644;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .header {
@@ -16,5 +22,44 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin: 10px 0 30px 0;
+  padding: 30px 0;
+  background: #699e34;
+  border-bottom: 1px solid chartreuse;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  background: #699e34;
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.pockemonCardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+.pokemonCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  height: 250px;
+  border-radius: 30px;
+  background: #f16405;
+  margin-bottom: 20px;
+  color: #261644;
+}
+
+.pokemonCard__img {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 15px;
 }
